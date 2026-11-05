@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nimmi Clothes – Ladies Clothing</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f8f0f2;--surface:#efdfe4;--ink:#3a1630;--muted:#6b4a5f;--accent:#d4537e;--on-accent:#fff;--line:#e2c9d2;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1d0f1a;--surface:#2d1828;--ink:#f6ecf1;--muted:#c5a9ba;--accent:#ee7aa0;--on-accent:#1d0f1a;--line:#42263a}}
+:root[data-theme="dark"]{--bg:#1d0f1a;--surface:#2d1828;--ink:#f6ecf1;--muted:#c5a9ba;--accent:#ee7aa0;--on-accent:#1d0f1a;--line:#42263a}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px);scroll-behavior:smooth;height:auto}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 'DM Sans',system-ui,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;margin:0;line-height:1.05;font-weight:600}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:11;display:flex;justify-content:space-between;align-items:center;padding:14px 5vw;background:var(--bg);border-bottom:1px solid var(--line)}
+.logo{font:700 30px 'Cormorant Garamond',serif;text-decoration:none;letter-spacing:.01em}
+nav a{margin-left:22px;text-decoration:none;color:var(--muted);font-size:.95rem}
+nav a:hover{color:var(--ink)}
+.btn{display:inline-block;background:var(--accent);color:var(--on-accent);padding:13px 26px;border-radius:999px;font-weight:500;text-decoration:none;border:0;font:500 1rem 'DM Sans',sans-serif;cursor:pointer}
+.btn.ghost{background:none;border:1.5px solid var(--ink);color:var(--ink)}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:4vw;align-items:center;padding:7vh 5vw}
+.hero h1{font-size:clamp(3.2rem,8vw,6.6rem);letter-spacing:-.01em}
+.hero p{max-width:44ch;color:var(--muted);font-size:1.15rem;margin:22px 0 28px}
+.hero .btns{display:flex;gap:12px;flex-wrap:wrap}
+.hero .art{border-radius:200px 200px 12px 12px;overflow:hidden;background:var(--surface);max-width:420px;justify-self:center;width:100%}
+section{padding:8vh 5vw}
+h2{font-size:clamp(2.2rem,5vw,3.6rem);margin-bottom:10px}
+.sub{color:var(--muted);margin:0 0 34px;max-width:54ch}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:28px}
+.card .img{border-radius:10px;overflow:hidden;cursor:pointer;background:var(--surface)}
+.card svg,.hero svg,.mimg svg{display:block;width:100%;height:auto}
+.card img,.mimg img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover}
+.card h3{font-size:1.5rem;margin:14px 0 2px}
+.card p{margin:0;color:var(--muted);font-size:.95rem}
+.row{display:flex;justify-content:space-between;align-items:center;margin-top:10px;gap:10px}
+.price{font-weight:700}
+.sm{padding:9px 18px;font-size:.9rem}
+.band{background:var(--surface);display:grid;gap:34px;grid-template-columns:repeat(3,1fr)}
+.band h3{font-size:1.6rem;margin-bottom:6px}.band p{margin:0;color:var(--muted)}
+.info{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px}
+.info div{border:1px solid var(--line);border-radius:12px;padding:22px}
+.info h3{font-size:1.5rem;margin-bottom:6px}.info p{margin:0;color:var(--muted);font-size:.97rem}
+.insta{background:var(--ink);color:var(--bg);text-align:center}
+.insta .sub{color:var(--bg);opacity:.8;margin:0 auto 26px}
+.insta .btn{background:var(--accent);color:var(--on-accent)}
+footer{padding:28px 5vw;color:var(--muted);font-size:.9rem;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+dialog{border:0;border-radius:16px;padding:0;max-width:860px;width:92vw;background:var(--bg);color:var(--ink);max-height:90vh;overflow:auto}
+dialog::backdrop{background:rgba(20,5,15,.6)}
+.m{display:grid;grid-template-columns:1fr 1fr}
+.mimg{background:var(--surface)}
+.mbody{padding:28px;position:relative}
+.mbody ul{padding-left:18px;color:var(--muted);margin:12px 0}
+.x{position:absolute;top:10px;right:14px;background:none;border:0;font-size:1.8rem;color:var(--ink);cursor:pointer}
+.sizes{display:flex;gap:8px;margin:10px 0 20px;flex-wrap:wrap}
+.sizes button{width:46px;height:46px;border-radius:50%;border:1.5px solid var(--line);background:none;color:var(--ink);font:500 .95rem 'DM Sans',sans-serif;cursor:pointer}
+.sizes button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+@media (max-width:760px){.hero,.m,.band{grid-template-columns:1fr}nav a:not(:last-child){display:none}.hero .art{order:-1;max-width:300px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header>
+  <a class="logo" href="#top">Nimmi Clothes</a>
+  <nav><a href="#collection">Collection</a><a href="#delivery">Delivery</a><a href="#instagram">Instagram</a><a class="btn sm" href="#collection">Shop now</a></nav>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div>
+      <h1>Graceful clothes for every day.</h1>
+      <p>Soft fabrics, elegant cuts and colours chosen for women who love simple, beautiful style. Stitched with care in Pakistan.</p>
+      <div class="btns"><a class="btn" href="#collection">View collection</a><a class="btn ghost" href="#delivery">Delivery info</a></div>
+    </div>
+    <div class="art" id="heroArt" aria-hidden="true"></div>
+  </div>
+
+  <section id="collection">
+    <h2>The collection</h2>
+    <p class="sub">Tap any piece to see fabric, sizes and details, then order on WhatsApp.</p>
+    <div class="grid" id="products"></div>
+  </section>
+
+  <section class="band">
+    <div><h3>Soft, breathable fabric</h3><p>Cotton, lawn and linen blends that feel light in every season.</p></div>
+    <div><h3>Careful stitching</h3><p>Every piece is checked before it is packed, so it reaches you perfect.</p></div>
+    <div><h3>Easy to order</h3><p>Just message us on WhatsApp. No account or card needed.</p></div>
+  </section>
+
+  <section id="delivery">
+    <h2>Delivery information</h2>
+    <p class="sub">We deliver across Pakistan with cash on delivery.</p>
+    <div class="info">
+      <div><h3>Delivery time</h3><p>Karachi, Lahore, Islamabad: 2–3 working days. Other cities: 3–5 working days.</p></div>
+      <div><h3>Delivery charges</h3><p>Rs 250 flat across Pakistan. Free delivery on orders above Rs 6,000.</p></div>
+      <div><h3>Payment</h3><p>Cash on delivery, or bank / Easypaisa / JazzCash transfer before dispatch.</p></div>
+      <div><h3>Exchange</h3><p>Wrong size? Message us within 7 days and we will arrange an exchange.</p></div>
+    </div>
+  </section>
+
+  <section class="insta" id="instagram">
+    <h2>Follow us on Instagram</h2>
+    <p class="sub">See new arrivals, customer photos and offers first at <span id="igh"></span>.</p>
+    <a class="btn" id="ig" href="https://www.instagram.com/nimmiclothes/" target="_blank" rel="noopener">Open Instagram</a>
+  </section>
+</main>
+
+<footer><span>© <span id="yr"></span> Nimmi Clothes. All rights reserved.</span><span><a href="#instagram">Instagram</a> · <a id="wa2" href="#">WhatsApp</a></span></footer>
+
+<dialog id="dlg" aria-label="Product details"><div class="m"><div class="mimg" id="mimg"></div>
+<div class="mbody"><button class="x" id="close" aria-label="Close">×</button>
+<h2 id="mn" style="font-size:2.3rem"></h2><div class="price" id="mp"></div>
+<ul id="md"></ul><div>Select size</div><div class="sizes" id="sz"></div>
+<a class="btn" id="mo" href="#" target="_blank" rel="noopener">Order on WhatsApp</a></div></div></dialog>
+
+<script>
+/* ===== OWNER SETTINGS: sirf yeh hissa badlein ===== */
+var PHONE="03XXXXXXXXX";      // apna WhatsApp number likhein, e.g. 03001234567
+var INSTAGRAM="nimmiclothes"; // apna Instagram username (bina @ ke)
+/* Har product mein: n=naam, p=price (Rs), sz=available sizes, img=asli photo ka data/URL (khali ho to drawing dikhegi) */
+var WA=(function(){var d=PHONE.replace(/\D/g,"");if(d.charAt(0)=="0")d="92"+d.slice(1);return d})();
+var WA_OK=/^92\d{10}$/.test(WA);
+var items=[
+ {img:"",sz:["S","M","L","XL"],n:"Rosewood Kurti",t:"kurti",c:"#d4537e",a:"#f0c9d4",p:3290,s:"Premium cotton, straight cut",d:["Fabric: soft cotton","Embroidered neckline","Length: 40 inches","Machine wash cold"]},
+ {img:"",sz:["S","M","L","XL"],n:"Plum Maxi Dress",t:"dress",c:"#3a1630",a:"#d4537e",p:5490,s:"Flowy chiffon, flared hem",d:["Fabric: chiffon with lining","Adjustable waist tie","Length: 52 inches","Dry clean recommended"]},
+ {img:"",sz:["S","M","L","XL"],n:"Blush Lawn Suit",t:"suit",c:"#e8a6b9",a:"#8e3b6b",p:6290,s:"3 piece, printed lawn",d:["Printed lawn shirt","Cotton trouser","Chiffon dupatta","Unstitched or stitched on request"]},
+ {img:"",sz:["S","M","L","XL"],n:"Mauve Co-ord Set",t:"coord",c:"#8e3b6b",a:"#f0c9d4",p:4890,s:"Top and palazzo, linen blend",d:["Fabric: linen blend","Relaxed palazzo fit","Elastic waist","Machine wash cold"]},
+ {img:"",sz:["S","M","L","XL"],n:"Winter Pashmina Shawl",t:"shawl",c:"#5b4a8f",a:"#f0c9d4",p:3990,s:"Soft, warm, fringe edge",d:["Fabric: acrylic pashmina","Size: 80 x 28 inches","Fringe detail","Hand wash only"]},
+ {img:"",sz:["S","M","L","XL"],n:"Golden Hour Kurti",t:"kurti",c:"#c98a5e",a:"#fff3e0",p:3590,s:"Lawn, block print",d:["Fabric: printed lawn","Side slits","Length: 42 inches","Machine wash cold"]}
+];
+function art(p,big){
+ if(p.img)return '<img src="'+p.img+'" alt="'+p.n+'" loading="lazy">';
+ var f=p.c,a=p.a,b="";
+ var hang='<path d="M100 18v10M100 28c-9-2-12-10-6-13" stroke="var(--ink)" stroke-width="2" fill="none" opacity=".5"/><path d="M100 28L62 50M100 28L138 50" stroke="var(--ink)" stroke-width="2" opacity=".5"/>';
+ if(p.t=="kurti")b='<path d="M76 58h48l22 26-10 14-10-9 4 105H70l4-105-10 9-10-14z" fill="'+f+'"/><path d="M90 58q10 14 20 0" fill="var(--surface)"/><path d="M84 66q16 22 32 0" stroke="'+a+'" stroke-width="2.5" fill="none"/><g fill="'+a+'" opacity=".8"><circle cx="100" cy="100" r="3"/><circle cx="100" cy="112" r="3"/><circle cx="100" cy="124" r="3"/></g>';
+ if(p.t=="dress")b='<path d="M86 58h28l6 40 34 130H46L80 98z" fill="'+f+'"/><path d="M86 58l-4-22M114 58l4-22" stroke="'+f+'" stroke-width="5"/><path d="M80 98h40" stroke="'+a+'" stroke-width="5"/><path d="M62 190q38 14 76 0M56 212q44 14 88 0" stroke="'+a+'" stroke-width="2" fill="none" opacity=".7"/>';
+ if(p.t=="suit")b='<path d="M78 56h44l20 24-9 13-9-8 3 90H73l3-90-9 8-9-13z" fill="'+f+'"/><path d="M76 150h48l-6 74h-14l-4-50-4 50H82z" fill="'+a+'"/><path d="M60 70q40 20 80 0" stroke="'+a+'" stroke-width="3" fill="none"/><g fill="'+a+'" opacity=".6"><circle cx="90" cy="100" r="4"/><circle cx="110" cy="115" r="4"/><circle cx="95" cy="130" r="4"/></g>';
+ if(p.t=="coord")b='<path d="M78 56h44l20 22-10 12-8-6-2 34H78l-2-34-8 6-10-12z" fill="'+f+'"/><path d="M76 124h48l46 100h-62l-6-60-6 60H30z" fill="'+f+'" opacity=".85"/><path d="M76 124h48" stroke="'+a+'" stroke-width="5"/><path d="M52 190l22-60M148 190l-22-60" stroke="'+a+'" stroke-width="1.5" opacity=".6"/>';
+ if(p.t=="shawl")b='<path d="M34 70q66-30 132 0l8 138q-74 26-148 0z" fill="'+f+'"/><g stroke="'+a+'" stroke-width="3" opacity=".8"><path d="M40 110q60-22 120 0M42 140q58-22 116 0M44 170q56-22 112 0"/></g><g stroke="'+f+'" stroke-width="2"><path d="M44 208v14M56 210v14M68 212v14M80 213v14M92 214v14M104 214v14M116 213v14M128 212v14M140 210v14M152 208v14"/></g>';
+ var bgc=p.c;
+ return '<svg viewBox="0 0 200 250" role="img" aria-label="'+p.n+'"><rect width="200" height="250" fill="var(--surface)"/><circle cx="100" cy="140" r="86" fill="'+bgc+'" opacity=".14"/>'+hang+b+'</svg>';
+}
+function wa(m){return "https://wa.me/"+(WA_OK?WA:"")+"?text="+encodeURIComponent(m)}
+document.addEventListener("click",function(e){
+ var a=e.target.closest&&e.target.closest('a[href^="https://wa.me"]');
+ if(a&&!WA_OK){e.preventDefault();alert("WhatsApp number abhi set nahi hai. Website ke OWNER SETTINGS mein PHONE likhein.")}
+});
+document.getElementById("ig").href="https://www.instagram.com/"+INSTAGRAM+"/";
+document.getElementById("igh").textContent="@"+INSTAGRAM;
+var box=document.getElementById("products"),dlg=document.getElementById("dlg"),cur,size="M";
+document.getElementById("heroArt").innerHTML=art(items[0]);
+items.forEach(function(p,i){
+ var d=document.createElement("article");d.className="card";
+ d.innerHTML='<div class="img" role="button" tabindex="0" aria-label="View '+p.n+'">'+art(p)+'</div><h3>'+p.n+'</h3><p>'+p.s+'</p><div class="row"><span class="price">Rs '+p.p.toLocaleString()+'</span><span><button class="btn ghost sm" data-i="'+i+'">Details</button> <a class="btn sm" target="_blank" rel="noopener" href="'+wa("Hi Nimmi Clothes, I want to order: "+p.n+" (Rs "+p.p+")")+'">Order</a></span></div>';
+ box.appendChild(d);
+ var open=function(){show(i)};
+ d.querySelector("button").onclick=open;
+ var im=d.querySelector(".img");im.onclick=open;im.onkeydown=function(e){if(e.key=="Enter"||e.key==" "){e.preventDefault();open()}};
+});
+function upd(){document.getElementById("mo").href=wa("Hi Nimmi Clothes, I want to order: "+cur.n+", size "+size+" (Rs "+cur.p+")")}
+function show(i){
+ cur=items[i];size=cur.sz.indexOf("M")>-1?"M":cur.sz[0];
+ document.getElementById("mimg").innerHTML=art(cur);
+ document.getElementById("mn").textContent=cur.n;
+ document.getElementById("mp").textContent="Rs "+cur.p.toLocaleString();
+ document.getElementById("md").innerHTML=cur.d.map(function(x){return "<li>"+x+"</li>"}).join("");
+ var sz=document.getElementById("sz");sz.innerHTML="";
+ cur.sz.forEach(function(s){
+  var b=document.createElement("button");b.textContent=s;b.setAttribute("aria-pressed",s==size);
+  b.onclick=function(){size=s;[].forEach.call(sz.children,function(c){c.setAttribute("aria-pressed",c===b)});upd()};
+  sz.appendChild(b);
+ });
+ upd();dlg.showModal();
+}
+document.getElementById("close").onclick=function(){dlg.close()};
+dlg.addEventListener("click",function(e){if(e.target===dlg)dlg.close()});
+document.getElementById("wa2").href=wa("Hi Nimmi Clothes");
+document.getElementById("yr").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
